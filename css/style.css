@@ -4,36 +4,27 @@ body {
   color: #333;
   margin: 0;
   font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
-  width: 1063px 
+  line-height: 1.9;
+  text-align: left;
 }
 
 header {
-  position: relative;
   max-width: 960px;
-  height: 270px;
+  height: 230px;
   margin: 0 auto;
 }  
 
 .header-title-area {
-  margin-top: px;
+  margin-top: 0px;
   margin-bottom: 30px;
+  width: 275px;
+  height: 35px;
 }
 
 .logo {
   font-size: 40px;
   text-align: center;
 }
-
-
-
-.cf :after {
-  clear: both;
-  display: block;
-  content: " ";
-}
-
-
-
 
 .cf li  {
   float: right;
@@ -45,9 +36,52 @@ header {
 
 .main h2 {
   margin-bottom: 65px;
-  font-size: 50px;
+  font-size: 35px;
   text-align: center;
   line-height: 1.0;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
+  letter-spacing: 0.05em;
+  padding: 0 55px;
+  
+}
+
+
+.contents1,
+.contents2 {
+  color: #333;
+  padding: 2%;
+  text-align: center;
+}
+p {
+  text-align: left;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ 
+/* Responsive */
+@media ( min-width : 600px ){
+  body {
+    background-color: #fff
+  }
+    .flexbox {
+      width: 700px;
+      margin: 0 auto;
+      display: -webkit-flex;
+      display: flex;
+    }
+  .contents1,
+  .contents2 {
+    -webkit-flex: 1;
+    flex: 1;
+    background: none;
+  }
+}
+
+.copyright {
+  color: #777;
+  text-align: center;
+  margin-top: 100px
 }
